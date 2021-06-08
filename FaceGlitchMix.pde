@@ -42,7 +42,7 @@ void setup() {
   background(0);
   size(1920, 1080);
 
-  video = new Capture(this, width/ratio, height/ratio);
+  video = new Capture(this, width/ratio, height/ratio, "pipeline:autovideosrc");  
   opencv = new OpenCV(this, width/ratio, height/ratio);
   opencv.loadCascade(OpenCV.CASCADE_FRONTALFACE);  
 
